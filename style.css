@@ -148,7 +148,7 @@ a {
 }
 
 .btn-pink:hover::before {
-  border: solid 3px var(--bgOrange);
+  /* border: solid 3px var(--bgOrange); */
   transform: scaleX(1);
   color: black !important;
   z-index: -1;
@@ -408,8 +408,8 @@ a {
   align-items: center;
 }
 
-.btn-project:hover {
-  border: none !important;
+.btn-project {
+  border: none;
 }
 
 .icon {
@@ -451,8 +451,8 @@ a {
   font-size: 15em;
   font-style: bold;
   color: rgb(231, 231, 231);
-  bottom: -34.5%;
-  right: -25%;
+  bottom: -35%;
+  right: -6%;
   user-select: none;
   overflow-y: hidden;
 }
@@ -586,4 +586,48 @@ a {
 .submit-icon {
   padding: 0 1rem;
   font-size: 1.5rem;
+}
+
+footer {
+  position: relative;
+  margin-top: -1px;
+  background-color: #343d68;
+  padding: 5rem;
+}
+
+.footer-wrapper {
+  display: flex;
+  gap: 1rem;
+  padding: 1.2rem 1.2rem 1.2rem 5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-faded-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #535c87;
+  user-select: none;
+  font-size: 5em;
+}
+
+.link-wrapper div {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.link-wrapper div a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.6s;
+}
+
+.link-wrapper div a:hover {
+  color: var(--bgOrange);
+}
+
+.icon-wrapper {
+  display: flex;
+  gap: 1rem;
 }
