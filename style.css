@@ -129,6 +129,10 @@ a {
   z-index: 1;
 }
 
+.btn-hero {
+  border: 2px solid var(--bgOrange);
+}
+
 .btn-pink:hover {
   color: black;
 }
@@ -148,7 +152,6 @@ a {
 }
 
 .btn-pink:hover::before {
-  /* border: solid 3px var(--bgOrange); */
   transform: scaleX(1);
   color: black !important;
   z-index: -1;
